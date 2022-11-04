@@ -7,11 +7,11 @@ import BigVan from '../assets/images/BigVan.png'
 export const Main = () => {
   return (
     <RN.View style={stlMain}>
-      <RN.View>
-        <RN.View style={stlTxtView}>
+      <RN.View style={stlTextBox}>
+        <RN.View style={stlTitle}>
           <RN.Text>Locadora de Vans em São Paulo</RN.Text>
         </RN.View>
-        <RN.View>
+        <RN.View style={stlTxt}>
           <RN.Text>
             A Help Vans é especializada no transporte de passageiros. 
 
@@ -21,7 +21,7 @@ export const Main = () => {
           </RN.Text>
         </RN.View>
       </RN.View>
-      <RN.View>
+      <RN.View style={stlImgView}>
         <RN.Image style={stlImg} source={BigVan} />
       </RN.View>
     </RN.View>
@@ -31,8 +31,17 @@ export const Main = () => {
 // ---------- set Styles
 const stlMain = {
   flex: 1,
-  flexDirection: 'row'
+  flexDirection: 'row',
+  padding: 10
 };
+
+const stlTextBox = {
+width: '50%'
+}
+
+const stlImgView = {
+  width: '50%',
+}
 
 const stlImg = {
   width: 400,
@@ -44,7 +53,9 @@ const stlImg = {
   // borderColor: "#0E0"
 };
 
-const stlTxtView = {
-  flexDirection: 'column',
-  width: "50%",
+const stlTitle = {
+  // flexDirection: 'column',
+  // width: "50%",
 }
+
+const stlTxt = {}

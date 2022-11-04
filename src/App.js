@@ -31,6 +31,7 @@ export default function App() {
 }
 
 // ---------- set Styles
-export const stlMain = {
-  flex: 1
+const stlMain = {
+  flex: 1,
+  width: '100%',
 };
